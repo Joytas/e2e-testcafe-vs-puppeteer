@@ -1,0 +1,26 @@
+{
+  "name": "testowo-e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-puppeteer": "jest",
+    "test-puppeteer:watch": "jest --watchAll",
+    "test-cafe:chrome:watch": "testcafe-live chrome test-cafe/test.js -s ./test-cafe",
+    "test-cafe:headless": "testcafe \"chrome:headless\" test-cafe/test.js -s ./test-cafe",
+    "test-cafe:headless:watch": "testcafe-live \"chrome:headless\" test-cafe/test.js -s ./test-cafe"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "enzyme": "^3.3.0",
+    "jest": "^23.4.0",
+    "jest-puppeteer": "^3.2.1",
+    "puppeteer": "^1.5.0",
+    "testcafe": "^0.20.4",
+    "testcafe-live": "^0.1.3"
+  },
+  "dependencies": {
+    "jest-puppeteer-performance": "^1.1.2"
+  }
+}
